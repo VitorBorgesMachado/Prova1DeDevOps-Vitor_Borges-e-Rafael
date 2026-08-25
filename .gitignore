@@ -1,0 +1,30 @@
+# EDITORES
+
+# Visual Studio Code
+.vscode/
+
+# ARQUIVOS TEMPORÁRIOS
+
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+
+
+# DEPENDÊNCIAS
+
+node_modules/
+
+# ARQUIVOS DE CONFIGURAÇÃO
+
+.env
+.env.local
+.env.development
+.env.production
+
+
+# BUILD / DISTRIBUIÇÃO
+
+dist/
+build/
