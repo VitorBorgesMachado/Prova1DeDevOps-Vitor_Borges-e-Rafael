@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #ffffff;
+    padding: 20px 8%;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    width: 84%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* CABEÇALHO DAS METAS */
+
+.cabecalho-metas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    padding: 50px 0 30px;
+}
+
+.cabecalho-metas h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.cabecalho-metas p {
+    color: #666;
+}
+
+
+/* BOTÃO */
+
+.botao-adicionar {
+    background-color: #4f46e5;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 12px 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.botao-adicionar:hover {
+    background-color: #3730a3;
+}
+
+
+/* RESUMO */
+
+.resumo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+.resumo-card {
+    background-color: #ffffff;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 20px;
+}
+
+.resumo-card span {
+    display: block;
+
+    color: #666;
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+.resumo-card strong {
+    font-size: 28px;
+    color: #4f46e5;
+}
+
+
+/* LISTA DE METAS */
+
+.lista-metas {
+    padding-bottom: 60px;
+}
+
+.lista-metas > h2 {
+    margin-bottom: 20px;
+}
+
+
+/* CARDS */
+
+.metas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.meta {
+    background-color: #ffffff;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 25px;
+}
+
+.meta-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.meta h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.meta p {
+    color: #666;
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* STATUS */
+
+.status {
+    display: inline-block;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.andamento {
+    background-color: #eef2ff;
+    color: #4f46e5;
+}
+
+.concluida {
+    background-color: #ecfdf5;
+    color: #059669;
+}
+
+
+/* PORCENTAGEM */
+
+.porcentagem {
+    color: #4f46e5;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* BARRA DE PROGRESSO */
+
+.progresso {
+    margin-bottom: 15px;
+}
+
+.barra {
+    width: 100%;
+    height: 8px;
+
+    background-color: #e5e7eb;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.barra-progresso {
+    height: 100%;
+
+    background-color: #4f46e5;
+
+    border-radius: 10px;
+}
+
+.progresso-50 {
+    width: 50%;
+}
+
+.progresso-75 {
+    width: 75%;
+}
+
+.progresso-100 {
+    width: 100%;
+}
+
+
+/* INFORMAÇÕES DA META */
+
+.meta-informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #222;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 20px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .metas {
+        grid-template-columns: 1fr;
+    }
+
+    .resumo {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        width: 90%;
+    }
+
+    .cabecalho-metas {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+}
